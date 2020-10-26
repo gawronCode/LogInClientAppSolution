@@ -16,5 +16,14 @@ namespace LogInClientApp
         {
             InitializeComponent();
         }
+
+        private void LogInFormBtn_Click(object sender, EventArgs e)
+        {
+            var logInForm = new LogInForm();
+            logInForm.StartPosition = FormStartPosition.CenterScreen;
+            logInForm.FormClosing += delegate { this.Close(); };
+            logInForm.Show();
+            this.Hide();
+        }
     }
 }

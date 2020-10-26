@@ -44,6 +44,7 @@
             this.LogInFormBtn.TabIndex = 0;
             this.LogInFormBtn.Text = "Log In";
             this.LogInFormBtn.UseVisualStyleBackColor = false;
+            this.LogInFormBtn.Click += new System.EventHandler(this.LogInFormBtn_Click);
             // 
             // ChangeCredentialsFormBtn
             // 
@@ -82,6 +83,7 @@
             this.Name = "MenuForm";
             this.Text = "Menu";
             this.ResumeLayout(false);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
         }
 

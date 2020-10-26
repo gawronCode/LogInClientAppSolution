@@ -16,5 +16,10 @@ namespace LogInClientApp
         {
             InitializeComponent();
         }
+
+        private void LogInForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
