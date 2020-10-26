@@ -16,5 +16,14 @@ namespace LogInClientApp
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var menuForm = new MenuForm();
+            menuForm.StartPosition = FormStartPosition.CenterScreen;
+            menuForm.FormClosing += delegate { this.Close(); };
+            menuForm.Show();
+            this.Hide();
+        }
     }
 }

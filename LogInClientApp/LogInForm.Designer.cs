@@ -39,6 +39,7 @@
             this.NickTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.NickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NickTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.NickTextBox.Location = new System.Drawing.Point(10, 10);
             this.NickTextBox.MaxLength = 64;
             this.NickTextBox.Name = "NickTextBox";
@@ -46,12 +47,15 @@
             this.NickTextBox.TabIndex = 0;
             this.NickTextBox.Text = "Nick";
             this.NickTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.NickTextBox.Click += new System.EventHandler(this.NickTextBox_Click);
+            this.NickTextBox.Leave += new System.EventHandler(this.NickTextBox_Leave);
             // 
             // PassCodeTextBox
             // 
             this.PassCodeTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.PassCodeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PassCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PassCodeTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.PassCodeTextBox.Location = new System.Drawing.Point(10, 58);
             this.PassCodeTextBox.MaxLength = 64;
             this.PassCodeTextBox.Name = "PassCodeTextBox";
@@ -59,6 +63,8 @@
             this.PassCodeTextBox.TabIndex = 1;
             this.PassCodeTextBox.Text = "PassCode";
             this.PassCodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PassCodeTextBox.Click += new System.EventHandler(this.PassCodeTextBox_Click);
+            this.PassCodeTextBox.Leave += new System.EventHandler(this.PassCodeTextBox_Leave);
             // 
             // BackBtn
             // 
@@ -71,6 +77,7 @@
             this.BackBtn.TabIndex = 2;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // LogInBtn
             // 
@@ -96,7 +103,7 @@
             this.Controls.Add(this.NickTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LogInForm";
-            this.Text = "LogInForm";
+            this.Text = "Log In";
             this.Load += new System.EventHandler(this.LogInForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

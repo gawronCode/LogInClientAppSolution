@@ -25,5 +25,23 @@ namespace LogInClientApp
             logInForm.Show();
             this.Hide();
         }
+
+        private void ChangeCredentialsFormBtn_Click(object sender, EventArgs e)
+        {
+            var changeCredentialsForm = new ChangeCredentialsForm();
+            changeCredentialsForm.StartPosition = FormStartPosition.CenterScreen;
+            changeCredentialsForm.FormClosing += delegate { this.Close(); };
+            changeCredentialsForm.Show();
+            this.Hide();
+        }
+
+        private void CreateAccountFormBtn_Click(object sender, EventArgs e)
+        {
+            var createAccountForm = new CreateAccountForm();
+            createAccountForm.StartPosition = FormStartPosition.CenterScreen;
+            createAccountForm.FormClosing += delegate { this.Close(); };
+            createAccountForm.Show();
+            this.Hide();
+        }
     }
 }

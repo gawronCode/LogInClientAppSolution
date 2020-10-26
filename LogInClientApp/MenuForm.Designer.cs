@@ -51,39 +51,41 @@
             this.ChangeCredentialsFormBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.ChangeCredentialsFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChangeCredentialsFormBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ChangeCredentialsFormBtn.Location = new System.Drawing.Point(10, 110);
+            this.ChangeCredentialsFormBtn.Location = new System.Drawing.Point(10, 210);
             this.ChangeCredentialsFormBtn.Name = "ChangeCredentialsFormBtn";
             this.ChangeCredentialsFormBtn.Size = new System.Drawing.Size(280, 90);
             this.ChangeCredentialsFormBtn.TabIndex = 1;
             this.ChangeCredentialsFormBtn.Text = "Change Credentials";
             this.ChangeCredentialsFormBtn.UseVisualStyleBackColor = false;
+            this.ChangeCredentialsFormBtn.Click += new System.EventHandler(this.ChangeCredentialsFormBtn_Click);
             // 
             // CreateAccountFormBtn
             // 
             this.CreateAccountFormBtn.BackColor = System.Drawing.Color.SlateBlue;
             this.CreateAccountFormBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateAccountFormBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CreateAccountFormBtn.Location = new System.Drawing.Point(10, 210);
+            this.CreateAccountFormBtn.Location = new System.Drawing.Point(10, 110);
             this.CreateAccountFormBtn.Name = "CreateAccountFormBtn";
             this.CreateAccountFormBtn.Size = new System.Drawing.Size(280, 90);
             this.CreateAccountFormBtn.TabIndex = 2;
             this.CreateAccountFormBtn.Text = "Create Account";
             this.CreateAccountFormBtn.UseVisualStyleBackColor = false;
+            this.CreateAccountFormBtn.Click += new System.EventHandler(this.CreateAccountFormBtn_Click);
             // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(300, 313);
+            this.ClientSize = new System.Drawing.Size(300, 310);
             this.Controls.Add(this.CreateAccountFormBtn);
             this.Controls.Add(this.ChangeCredentialsFormBtn);
             this.Controls.Add(this.LogInFormBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.ResumeLayout(false);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
         }
 
