@@ -12,14 +12,17 @@ namespace LogInClientApp
 {
     public partial class MenuForm : Form
     {
-        public MenuForm()
+        private readonly ITextBoxManager _textBoxManager;
+
+        public MenuForm(ITextBoxManager textBoxManager)
         {
             InitializeComponent();
+            _textBoxManager = textBoxManager;
         }
 
         private void LogInFormBtn_Click(object sender, EventArgs e)
         {
-            var logInForm = new LogInForm();
+            var logInForm = new LogInForm(_textBoxManager);
             logInForm.StartPosition = FormStartPosition.CenterScreen;
             logInForm.FormClosing += delegate { this.Close(); };
             logInForm.Show();
@@ -28,7 +31,7 @@ namespace LogInClientApp
 
         private void ChangeCredentialsFormBtn_Click(object sender, EventArgs e)
         {
-            var changeCredentialsForm = new ChangeCredentialsForm();
+            var changeCredentialsForm = new ChangeCredentialsForm(_textBoxManager);
             changeCredentialsForm.StartPosition = FormStartPosition.CenterScreen;
             changeCredentialsForm.FormClosing += delegate { this.Close(); };
             changeCredentialsForm.Show();
@@ -37,7 +40,7 @@ namespace LogInClientApp
 
         private void CreateAccountFormBtn_Click(object sender, EventArgs e)
         {
-            var createAccountForm = new CreateAccountForm();
+            var createAccountForm = new CreateAccountForm(_textBoxManager);
             createAccountForm.StartPosition = FormStartPosition.CenterScreen;
             createAccountForm.FormClosing += delegate { this.Close(); };
             createAccountForm.Show();

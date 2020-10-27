@@ -12,18 +12,26 @@ namespace LogInClientApp
 {
     public partial class ChangeCredentialsForm : Form
     {
-        public ChangeCredentialsForm()
+        private readonly ITextBoxManager _textBoxManager;
+
+        public ChangeCredentialsForm(ITextBoxManager textBoxManager)
         {
             InitializeComponent();
+            _textBoxManager = textBoxManager;
         }
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            var menuForm = new MenuForm();
+            var menuForm = new MenuForm(_textBoxManager);
             menuForm.StartPosition = FormStartPosition.CenterScreen;
             menuForm.FormClosing += delegate { this.Close(); };
             menuForm.Show();
             this.Hide();
+        }
+
+        private void PassCodeFormBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

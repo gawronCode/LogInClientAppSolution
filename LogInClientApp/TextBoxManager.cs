@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace LogInClientApp
 {
-    class TextBoxManager
+    class TextBoxManager : ITextBoxManager
     {
 
         public void HideSuggestion(TextBox textBox, ref bool visibilityFlag)

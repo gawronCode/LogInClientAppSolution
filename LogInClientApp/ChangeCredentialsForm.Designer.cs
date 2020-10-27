@@ -44,6 +44,7 @@
             this.PassCodeFormBtn.TabIndex = 0;
             this.PassCodeFormBtn.Text = "Change PassCode";
             this.PassCodeFormBtn.UseVisualStyleBackColor = false;
+            this.PassCodeFormBtn.Click += new System.EventHandler(this.PassCodeFormBtn_Click);
             // 
             // EmailFormBtn
             // 

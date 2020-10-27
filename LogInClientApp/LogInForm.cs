@@ -13,14 +13,15 @@ namespace LogInClientApp
     public partial class LogInForm : Form
     {
 
-        private readonly TextBoxManager _textBoxManager = new TextBoxManager();
+        private readonly ITextBoxManager _textBoxManager;
 
         private bool _nickTextBoxSuggestionOn = true;
         private bool _passCodeTextBoxSuggestionOn = true;
 
-        public LogInForm()
+        public LogInForm(ITextBoxManager textBoxManager)
         {
             InitializeComponent();
+            _textBoxManager = textBoxManager;
             this.ActiveControl = this.LogInBtn;
         }
 
@@ -31,7 +32,7 @@ namespace LogInClientApp
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            var menuForm = new MenuForm();
+            var menuForm = new MenuForm(_textBoxManager);
             menuForm.StartPosition = FormStartPosition.CenterScreen;
             menuForm.FormClosing += delegate { this.Close(); };
             menuForm.Show();

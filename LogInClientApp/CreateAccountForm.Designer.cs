@@ -65,41 +65,54 @@
             // 
             this.NickTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.NickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NickTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.NickTextBox.Location = new System.Drawing.Point(10, 10);
             this.NickTextBox.Name = "NickTextBox";
             this.NickTextBox.Size = new System.Drawing.Size(570, 38);
             this.NickTextBox.TabIndex = 2;
             this.NickTextBox.Text = "Nick";
+            this.NickTextBox.Click += new System.EventHandler(this.NickTextBox_Click);
+            this.NickTextBox.Leave += new System.EventHandler(this.NickTextBox_Leave);
             // 
             // PassCodeTextBox
             // 
             this.PassCodeTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.PassCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PassCodeTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.PassCodeTextBox.Location = new System.Drawing.Point(10, 58);
             this.PassCodeTextBox.Name = "PassCodeTextBox";
             this.PassCodeTextBox.Size = new System.Drawing.Size(570, 38);
             this.PassCodeTextBox.TabIndex = 3;
             this.PassCodeTextBox.Text = "PassCode";
+            this.PassCodeTextBox.Click += new System.EventHandler(this.PassCodeTextBox_Click);
+            this.PassCodeTextBox.Leave += new System.EventHandler(this.PassCodeTextBox_Leave);
             // 
             // RepeatPassCodeTextBox
             // 
             this.RepeatPassCodeTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.RepeatPassCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.RepeatPassCodeTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.RepeatPassCodeTextBox.Location = new System.Drawing.Point(10, 106);
             this.RepeatPassCodeTextBox.Name = "RepeatPassCodeTextBox";
             this.RepeatPassCodeTextBox.Size = new System.Drawing.Size(570, 38);
             this.RepeatPassCodeTextBox.TabIndex = 4;
             this.RepeatPassCodeTextBox.Text = "Repeat PassCode";
+            this.RepeatPassCodeTextBox.Click += new System.EventHandler(this.RepeatPassCodeTextBox_Click);
+            this.RepeatPassCodeTextBox.Leave += new System.EventHandler(this.RepeatPassCodeTextBox_Leave);
             // 
             // EmailAddressTextBox
             // 
             this.EmailAddressTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.EmailAddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.EmailAddressTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.EmailAddressTextBox.Location = new System.Drawing.Point(10, 154);
             this.EmailAddressTextBox.Name = "EmailAddressTextBox";
             this.EmailAddressTextBox.Size = new System.Drawing.Size(570, 38);
             this.EmailAddressTextBox.TabIndex = 5;
             this.EmailAddressTextBox.Text = "Email Address";
+            this.EmailAddressTextBox.Click += new System.EventHandler(this.EmailAddressTextBox_Click);
+            this.EmailAddressTextBox.TextChanged += new System.EventHandler(this.EmailAddressTextBox_TextChanged);
+            this.EmailAddressTextBox.Leave += new System.EventHandler(this.EmailAddressTextBox_Leave);
             // 
             // CreateAccountForm
             // 
