@@ -46,44 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeCredentialsForm.cs">
+    <Compile Include="AppForms\ChangeCredentialsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChangeCredentialsForm.Designer.cs">
+    <Compile Include="AppForms\ChangeCredentialsForm.Designer.cs">
       <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateAccountForm.cs">
+    <Compile Include="AppForms\CreateAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateAccountForm.Designer.cs">
+    <Compile Include="AppForms\CreateAccountForm.Designer.cs">
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ITextBoxManager.cs" />
-    <Compile Include="LogInForm.cs">
+    <Compile Include="Tools\ITextBoxManager.cs" />
+    <Compile Include="AppForms\LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogInForm.Designer.cs">
+    <Compile Include="AppForms\LogInForm.Designer.cs">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuForm.cs">
+    <Compile Include="AppForms\MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuForm.Designer.cs">
+    <Compile Include="AppForms\MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextBoxManager.cs" />
-    <EmbeddedResource Include="ChangeCredentialsForm.resx">
+    <Compile Include="Tools\TextBoxManager.cs" />
+    <EmbeddedResource Include="AppForms\ChangeCredentialsForm.resx">
       <DependentUpon>ChangeCredentialsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateAccountForm.resx">
+    <EmbeddedResource Include="AppForms\CreateAccountForm.resx">
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogInForm.resx">
+    <EmbeddedResource Include="AppForms\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuForm.resx">
+    <EmbeddedResource Include="AppForms\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,5 +108,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
