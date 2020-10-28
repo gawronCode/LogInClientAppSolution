@@ -47,6 +47,7 @@
             this.CreateBtn.TabIndex = 0;
             this.CreateBtn.Text = "Create";
             this.CreateBtn.UseVisualStyleBackColor = false;
+            this.CreateBtn.Click += new System.EventHandler(this.CreateBtn_Click);
             // 
             // BackBtn
             // 

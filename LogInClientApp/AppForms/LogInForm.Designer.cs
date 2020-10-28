@@ -90,6 +90,7 @@
             this.LogInBtn.TabIndex = 3;
             this.LogInBtn.Text = "Log In";
             this.LogInBtn.UseVisualStyleBackColor = false;
+            this.LogInBtn.Click += new System.EventHandler(this.LogInBtn_Click);
             // 
             // LogInForm
             // 

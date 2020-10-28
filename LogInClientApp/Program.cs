@@ -1,8 +1,11 @@
-﻿using System;
+﻿using LogInClientApp.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogInClientApp.Tools;
+
 
 namespace LogInClientApp
 {
@@ -14,6 +17,7 @@ namespace LogInClientApp
         [STAThread]
         static void Main()
         {
+            ApiHttp.InitializeClient();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MenuForm(new TextBoxManager()));

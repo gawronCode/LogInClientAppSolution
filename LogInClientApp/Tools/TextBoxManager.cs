@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogInClientApp.Tools;
 
-namespace LogInClientApp
+namespace LogInClientApp.Tools
 {
     class TextBoxManager : ITextBoxManager
     {

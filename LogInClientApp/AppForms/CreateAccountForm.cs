@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LogInClientApp.Data;
+using LogInClientApp.Models;
 
 namespace LogInClientApp
 {
@@ -14,6 +16,7 @@ namespace LogInClientApp
     {
 
         private readonly ITextBoxManager _textBoxManager;
+        private readonly ApiRequest _apiRequest = new ApiRequest();
 
         private bool _nickTextBoxSuggestionOn = true;
         private bool _passCodeTextBoxSuggestionOn = true;
@@ -81,6 +84,24 @@ namespace LogInClientApp
 
         private void EmailAddressTextBox_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private async void CreateBtn_Click(object sender, EventArgs e)
+        {
+
+            if (this.PassCodeTextBox == this.RepeatPassCodeTextBox)
+            {
+                MessageBox.Show("PassCode doesn't match confirmation", "error");
+                return;
+            }
+            AppClient appClient = new AppClient
+            {
+                EmailAddress = this.EmailAddressTextBox.Text,
+                Nick = this.NickTextBox.Text,
+                PassCode = this.PassCodeTextBox.Text
+            };
+            await _apiRequest.CreateAppClientAccount(appClient);
 
         }
     }
